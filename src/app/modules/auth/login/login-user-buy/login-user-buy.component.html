@@ -1,0 +1,41 @@
+<app-header-landing></app-header-landing>
+<div class="login-container">
+  <div class="login-box bg-black bg-opacity-75 text-white ">
+    <h2>Sesión usuario</h2>
+
+    <form (ngSubmit)="initSession()" [formGroup]="formulario">
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su email ..." formControlName="email">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingrese su contraseña ..."
+          formControlName="password">
+      </div>
+      <div class="error"><span *ngIf="formulario.controls['email'].getError('required') && formulario.touched">El campo
+          email es requerido</span></div>
+      <div class="error"><span *ngIf="formulario.controls['email'].getError('email') && formulario.touched">El campo
+          email debe ser valido</span></div>
+      <div class="error"><span *ngIf="formulario.controls['password'].getError('required') && formulario.touched">El
+          campo password es requerido</span></div>
+      <div class="error"><span *ngIf="formulario.controls['password'].getError('minlength') && formulario.touched">El
+          campo password debe tener minimo 7 caracteres</span></div>
+      <div class="error"><span *ngIf="formulario.controls['password'].getError('maxlength') && formulario.touched">El
+          campo password debe tener maximo 8 caracteres</span></div>
+      <div class="form-group">
+        <input type="hidden" name="id" id="id" formControlName="id">
+      </div>
+      <div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+
+        <input type="submit" class="btn btn-outline-light  me-md-2 gap-2 col-3" value="Iniciar sesion"
+          [disabled]="formulario.invalid">
+
+        <input class="btn btn-outline-light  gap-2 col-3" type="submit" name="register" id="register"
+          value="Registrarse" [routerLink]="['/registerUserBuy']">
+      </div>
+    </form>
+  </div>
+</div>

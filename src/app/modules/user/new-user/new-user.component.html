@@ -1,0 +1,82 @@
+<div class="login-container">
+    <div class="login-box bg-black bg-opacity-75 text-white">
+        <h2>Nuevo usuario</h2>
+        <form (submit)="altaUsuario()" [formGroup]="formulario">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Ingrese su nombre ..." formControlName="name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Apellido</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Ingrese su apeliido ..."
+                    formControlName="lastName">
+            </div>
+            <div class="form-group">
+                <label for="dni">Dni</label>
+                <input type="text" text name="dni" id="dni" placeholder="Ingrese su dni ..." formControlName="dni">
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Fecha de nacimiento</label>
+                <input type="date" name="birthdate" id="birthdate" formControlName="birthdate">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email ..." formControlName="email">
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Ingrese su username ..."
+                    formControlName="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Ingrese su password ..."
+                    formControlName="password">
+            </div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['lastName'].getError('required') && formulario.touched">El campo apellido
+                    es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['name'].getError('required') && formulario.touched">El
+                    campo es nombre es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['dni'].getError('required') && formulario.touched">El
+                    campo dni es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['dni'].getError('minlength') && formulario.touched">El
+                    campo dni debe tener minimo 7 caracteres</span></div>
+            <div class="error"><span *ngIf="formulario.controls['dni'].getError('maxlength') && formulario.touched">El
+                    campo dni debe tener maximo 8 caracteres</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['birthdate'].getError('required') && formulario.touched">El campo fecha
+                    de nacimiento es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['email'].getError('required') && formulario.touched">El
+                    campo email es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['email'].getError('email') && formulario.touched">El
+                    campo email debe ser valido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['username'].getError('required') && formulario.touched">El campo username
+                    es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['username'].getError('minlength') && formulario.touched">El campo
+                    username debe tener minimo 7 caracteres</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['username'].getError('maxlength') && formulario.touched">El campo
+                    username debe tener maximo 8 caracteres</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['password'].getError('required') && formulario.touched">El campo password
+                    es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['password'].getError('minlength') && formulario.touched">El campo
+                    password debe tener minimo 7 caracteres</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['password'].getError('maxlength') && formulario.touched">El campo
+                    password debe tener maximo 8 caracteres</span></div>
+            <div class="form-group">
+                <input type="hidden" name="id" id="id" formControlName="id">
+            </div>
+            <div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+
+                <input type="submit" class="btn btn-outline-light  me-md-2 gap-2 col-3" [disabled]="formulario.invalid">
+
+            </div>
+        </form>
+    </div>
+</div>

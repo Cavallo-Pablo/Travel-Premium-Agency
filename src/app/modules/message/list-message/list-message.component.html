@@ -1,0 +1,63 @@
+<app-navbar-admin></app-navbar-admin>
+<h2 class=" text-center fw-bold fs-3">Listado de mensajes</h2>
+<h1 class="fs-2 fw-bold text-center mb-2 mt-2">Ordenar por:</h1>
+<div class="navegacion-footer">
+    <div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6" for="">Nombre</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscName()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescName()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6" for="">Asunto</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscSubject()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescSubject()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Email</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscEmail()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescEmail()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Telefono</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscPhone()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescPhone()">⇓</button>
+        </div>
+    </div>
+</div>
+<main class="contenedor">
+    <br>
+    <div  class="overflow-y-auto " style="height: 60vh;scrollbar-color: #0c0000;">
+        <br>
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th>Nro °</th>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Asunto</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Mensaje</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </thead>
+            <tbody id="clientes">
+                <tr *ngFor="let item of listaMensajes; index as i">
+                    <td># {{i+1}}</td>
+                    <td>{{item.id}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.subject}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.phone}}</td>
+                    <td>{{item.message}}</td>
+                    <td><input type="button" name="" value="❌" (click)="eliminarMensaje(item)"
+                            class="btn btn-outline-danger"></td>
+                    <td><input type="button" name="" value="📝" [routerLink]="['/editMessage',item]"
+                            class="btn btn-outline-primary"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>

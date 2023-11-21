@@ -1,0 +1,21 @@
+<div class="login-container">
+    <div class="login-box bg-black bg-opacity-75 text-white">
+      <h2 class="titulo">Compra</h2>
+      <form (ngSubmit)="realizarCompra()" [formGroup]="formulario">
+         <div class="form-group">
+          <label for="quantity">Cantidad de personas</label>
+          <input type="number" name="quantity" placeholder="Ingrese la cantidad..." formControlName="quantity" class="form-control" required>
+        </div>
+
+        <div class="form-group">
+          <input type="hidden" name="id" formControlName="id">
+        </div>
+
+        <div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="submit" class="btn btn-outline-light me-md-2 gap-2 col-3" [disabled]="formulario.invalid">
+            Comprar viaje
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>

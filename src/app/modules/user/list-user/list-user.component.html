@@ -1,0 +1,67 @@
+<app-navbar-admin></app-navbar-admin>
+<h2 class="text-center fw-bold fs-3">Listado de usuarios</h2>
+<h1 class="fs-2 fw-bold text-center mb-2 mt-2">Ordenar por:</h1>
+<div class="navegacion-footer">
+    <div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Apellido</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscLastName()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescLastName()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Nombre</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscName()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescName()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Dni</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscDni()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescDni()">⇓</button>
+        </div>
+        <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+            <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 " for="">Fecha de nacimiento</span>
+            <button type="button" class="btn btn btn-dark" (click)="orderAscBirthdate()">⇑</button>
+            <button type="button" class="btn btn btn-dark" (click)="orderDescBirthdate()">⇓</button>
+        </div>
+    </div>
+</div>
+<main class="contenedor"><br>
+    <div class="overflow-y-auto " style="height: 60vh;scrollbar-color: #0c0000;">
+        <table>
+            <thead class="titulo">
+                <tr>
+                    <th>Nro °</th>
+                    <th>Apellido</th>
+                    <th>Nombre</th>
+                    <th>Dni</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Eliminar</th>
+                    <th>Editar</th>
+                </tr>
+            </thead>
+            <tbody id="clientes">
+                <tr *ngFor="let item of listaUsuarios; index as i">
+                    <td># {{i+1}}</td>
+                    <td>{{item.lastName}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.dni}}</td>
+                    <td>{{item.birthdate}}</td>
+                    <td>{{item.email}}</td>
+                    <td>{{item.userName}}</td>
+                    <td>{{item.password}}</td>
+                    <td><input type="button" name="" value="❌" (click)="eliminarUsuario(item)"
+                            class="btn btn-outline-danger"></td>
+                    <td><input type="button" name="" value="📝" [routerLink]="['/editUser',item]"
+                            class="btn btn-outline-primary"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <input type="submit" [routerLink]="['/newUser'] " class="btn btn-outline-light  me-md-5 gap-3 btn-lg col-2"
+                value="Nuevo usuario">
+        </div>
+    </div>
+</main>

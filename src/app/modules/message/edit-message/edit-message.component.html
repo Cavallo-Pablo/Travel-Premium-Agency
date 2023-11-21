@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="login-container">
+    <div class="login-box bg-black bg-opacity-75 text-white ">
+        <h2 class="titulo">Modificar mensaje</h2>
+        <form (ngSubmit)="editarMensage()" [formGroup]="formulario">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" name="name" placeholder="Ingrese su nombre ..." formControlName="editName">
+            </div>
+            <div class="form-group">
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject" placeholder="Ingrese su asunto ..." formControlName="editSubject">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Ingrese su email ..." formControlName="editEmail">
+            </div>
+            <div class="form-group">
+                <label for="name">Telefono</label>
+                <input type="text" name="phone" placeholder="Ingrese su phone ..." formControlName="editPhone">
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control fs-4" name="message" cols="30" rows="5" formControlName="editMessage"
+                    placeholder="Ingrese un mensaje ..." style="resize: none;" required></textarea>
+            </div>
+
+
+            <div class="error"><span *ngIf="formulario.controls['name'].getError('required') && formulario.touched">El
+                    campo es nombre es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['subject'].getError('required') && formulario.touched">El campo asunto es
+                    requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['email'].getError('required') && formulario.touched">El
+                    campo email es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['email'].getError('email') && formulario.touched">El
+                    campo email debe ser valido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['phone'].getError('required') && formulario.touched">El
+                    campo telefono es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['message'].getError('required') && formulario.touched">El campo mensaje
+                    es requerido</span></div>
+
+            <div class="form-group">
+                <input type="hidden" name="id" formControlName="id">
+            </div>
+            <div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+                <input type="submit" class="btn btn-outline-light me-md-2 gap-2 col-3"
+                    [disabled]="formulario.invalid">
+            </div>
+        </form>
+    </div>
+</div>

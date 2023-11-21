@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.contenedor {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.error {
+    color: rgb(245, 125, 125);
+    text-align: center;
+    font-weight: bolder;
+    width: 100%;
+}
+
+.form-group {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.login-box {
+    background-color: #f4f4f48f;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 40rem;
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+}
+
+.navegacion a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+}
+
+.navegacion-footer {
+    top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2rem;
+    justify-content: space;
+}
+
+.navegacion-footer a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+}
+
+.navegacion-footer a:hover {
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 5, 139);
+}
+
+.navegacion-header {
+    display: flex;
+    justify-content: start;
+    margin: .5rem;
+}
+
+.navegacion-header a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+}
+
+header hr {
+    border: .5px solid #e1e1e1;
+}
+
+.navegacion-header a:hover {
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 5, 139);
+}
+
+.navegacion-navbar {
+    display: flex;
+    justify-content: end;
+    margin: .5rem;
+}
+
+.navegacion-navbar a {
+    text-decoration: none;
+    margin: 1rem;
+    color: black;
+}
+
+.navegacion-navbar a:hover {
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(0, 5, 139);
+}
+
+.titulo {
+    text-align: center;
+}
+
+
+a {
+    text-decoration: none;
+    text-align: end;
+    color: black;
+    font-size: medium;
+}
+
+a:hover {
+    font-size: large;
+    color: rgb(17, 0, 255);
+}
+
+body {
+    background-image: url('http://www.ofertasparaviajar.com/wp-content/uploads/2016/08/top100-gifts-animados-viaje-paisajes-9.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+}
+
+h1 {
+    font-weight: bold;
+    background-color: #cccccc1f;
+}
+
+header hr {
+    border: .5px solid #e1e1e1;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border: 1rem outset rgba(196, 173, 173, 0.692);
+    margin-bottom: 2rem;
+}
+
+tbody td {
+    border: 1px solid#ccc;
+    padding: 1rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(85, 79, 85, 0.726);
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(122, 87, 85, 0.658);
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+    font-size: small;
+}
+
+thead th {
+    background-color: hsla(0, 0%, 0%, 0.726);
+    color: #ffffff;
+    text-align: left;
+    padding: 1rem;
+    text-align: center;
+}

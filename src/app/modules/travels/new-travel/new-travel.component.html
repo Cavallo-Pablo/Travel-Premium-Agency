@@ -1,0 +1,52 @@
+<div class="login-container">
+    <div class="login-box bg-black bg-opacity-75 text-white">
+        <h2>Nuevo destino</h2>
+        <form (submit)="altaViaje()" [formGroup]="formulario">
+            <div class="form-group">
+                <label for="province">Provincia</label>
+                <input type="text" name="province" id="province" formControlName="province">
+            </div>
+            <div class="form-group">
+                <label for="place">Lugar</label>
+                <input type="text" name="place" id="place" formControlName="place">
+            </div>
+            <div class="form-group">
+                <label for="activities">Actividades</label>
+                <input type="text" name="activities" id="activities" formControlName="activities">
+            </div>
+            <div class="form-group">
+                <label for="image">Imagen</label>
+                <input type="url" name="image" id="image" formControlName="image">
+            </div>
+            <div class="form-group">
+                <label for="description">Descripcion</label>
+                <input type="text" name="description" id="description" formControlName="description">
+            </div>
+            <div class="form-group">
+                <label for="price">Precio</label>
+                <input type="number" name="price" id="price" formControlName="price">
+            </div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['province'].getError('required') && formulario.touched">El campo
+                    provincia es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['place'].getError('required') && formulario.touched">El
+                    campo lugar es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['activities'].getError('required') && formulario.touched">El campo
+                    actividad es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['image'].getError('required') && formulario.touched">El
+                    campo imagen es requerido</span></div>
+            <div class="error"><span
+                    *ngIf="formulario.controls['description'].getError('required') && formulario.touched">El campo
+                    descripcion es requerido</span></div>
+            <div class="error"><span *ngIf="formulario.controls['price'].getError('required') && formulario.touched">El
+                    campo precio es requerido</span></div>
+            <div class="form-group">
+                <input type="hidden" name="id" id="id" formControlName="id">
+            </div>
+            <div class="form-group d-grid gap-2 d-md-flex justify-content-md-end">
+                <input type="submit" class="btn btn-outline-light me-md-2 gap-2 col-3" [disabled]="formulario.invalid">
+            </div>
+        </form>
+    </div>
+</div>

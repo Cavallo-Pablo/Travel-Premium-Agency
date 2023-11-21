@@ -1,0 +1,10 @@
+
+<carousel style="align-items: center;" data-interval="500" class="carousel-fade" >
+  <slide *ngFor="let slide of listaViajes ;index as i">
+    <img src={{slide.image}} style="width:50vw; height: 50vh; " class="rounded mx-auto d-block img-fluid">
+    <div class="carousel-caption">
+      <h1 class="fs-1 fw-bolder text-decoration-underline" style="color:rgb(31, 252, 2);" (click)=" mostrarMensaje(slide)"> Click aquí</h1>
+      <p style="color:rgb(31, 252, 2);">Destino N°: {{i+1}}</p>
+    </div>
+  </slide>
+</carousel>

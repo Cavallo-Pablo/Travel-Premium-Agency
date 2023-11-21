@@ -1,0 +1,393 @@
+{
+  "admins": [
+    {
+      "id": 1,
+      "userName": "admin123",
+      "password": "admin123"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "lastName": "Perez",
+      "name": "Juan Pablo",
+      "dni": "1234567",
+      "birthdate": "2023-10-11",
+      "email": "admin@gmail.com",
+      "userName": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": 2,
+      "lastName": "Romero",
+      "name": "Sergio",
+      "dni": "12345678",
+      "birthdate": "2023-12-02",
+      "email": "romero@gmail.com",
+      "userName": "romero-sergio",
+      "password": "1234567"
+    },
+    {
+      "id": 3,
+      "lastName": "Mouche",
+      "name": "Juan",
+      "dni": "26346260",
+      "birthdate": "2023-10-29",
+      "email": "juan-mouche@gmail.com",
+      "userName": "juan-mouche",
+      "password": "14785236"
+    },
+    {
+      "id": 4,
+      "lastName": "Lopez",
+      "name": "Carlos",
+      "dni": "26346260",
+      "birthdate": "2023-11-06",
+      "email": "pepito@gmail.com",
+      "userName": "admin",
+      "password": "7531598"
+    },
+    {
+      "id": 5,
+      "lastName": "Mouche",
+      "name": "Sergio",
+      "dni": "26346260",
+      "birthdate": "2023-12-06",
+      "email": "pepito@gmail.com",
+      "userName": "pablo.d.",
+      "password": "25242224"
+    },
+    {
+      "id": 6,
+      "lastName": "Romero",
+      "name": "Martina",
+      "dni": "26346260",
+      "birthdate": "2023-12-06",
+      "email": "pablo.d.cavallo@gmail.com",
+      "userName": "martina",
+      "password": "1478523"
+    }
+  ],
+  "buys": [
+    {
+      "users": {
+        "id": 1,
+        "lastName": "Perez",
+        "name": "Juan Pablo",
+        "dni": "1234567",
+        "birthdate": "2023-10-11",
+        "email": "admin@gmail.com",
+        "userName": "admin",
+        "password": "admin123"
+      },
+      "travels": {
+        "id": 1,
+        "province": "Buenos Aires",
+        "place": "Mar del Plata",
+        "activities": "Playa, surf, casino, gastronomía",
+        "image": "https://playastop.com/wp-content/uploads/2019/04/Mar-del-Plata.jpg",
+        "description": "Mar del Plata es uno de los destinos turísticos más populares de Argentina, conocido por sus playas, deportes acuáticos y vida nocturna.",
+        "price": 36846.63
+      },
+      "amount": 110539.88999999998,
+      "quantity": 3,
+      "id": 1
+    },
+    {
+      "users": {
+        "id": 3,
+        "lastName": "Mouche",
+        "name": "Juan",
+        "dni": "26346260",
+        "birthdate": "2023-10-29",
+        "email": "juan-mouche@gmail.com",
+        "userName": "juan-mouche",
+        "password": "14785236"
+      },
+      "travels": {
+        "id": 1,
+        "province": "Buenos Aires",
+        "place": "Mar del Plata",
+        "activities": "Playa, surf, casino, gastronomía",
+        "image": "https://playastop.com/wp-content/uploads/2019/04/Mar-del-Plata.jpg",
+        "description": "Mar del Plata es uno de los destinos turísticos más populares de Argentina, conocido por sus playas, deportes acuáticos y vida nocturna.",
+        "price": 36846.63
+      },
+      "amount": 110539.88999999998,
+      "quantity": 3,
+      "id": 2
+    },
+    {
+      "users": {
+        "id": 4,
+        "lastName": "Lopez",
+        "name": "Carlos",
+        "dni": "26346260",
+        "birthdate": "2023-11-06",
+        "email": "pepito@gmail.com",
+        "userName": "admin",
+        "password": "7531598"
+      },
+      "travels": {
+        "id": 11,
+        "province": "Córdoba",
+        "place": "Villa General Belgrano",
+        "activities": "Fiesta de la cerveza, turismo rural, gastronomía",
+        "image": "https://i.pinimg.com/originals/61/30/29/613029ffc539dede5e1bfc420181518b.jpg",
+        "description": "Villa General Belgrano es conocida por su herencia alemana y la celebración de la Fiesta Nacional de la Cerveza.",
+        "price": 52365.99
+      },
+      "amount": 104731.98,
+      "quantity": 2,
+      "id": 3
+    },
+    {
+      "users": {
+        "id": 1,
+        "lastName": "Perez",
+        "name": "Juan Pablo",
+        "dni": "1234567",
+        "birthdate": "2023-10-11",
+        "email": "admin@gmail.com",
+        "userName": "admin",
+        "password": "admin123"
+      },
+      "travels": {
+        "id": 6,
+        "province": "Jujuy",
+        "place": "Quebrada de Humahuaca",
+        "activities": "Turismo cultural, senderismo, observación de paisajes",
+        "image": "https://wallpapercave.com/wp/wp8903417.jpg",
+        "description": "La Quebrada de Humahuaca es famosa por su belleza natural y su patrimonio cultural, con pueblos antiguos y espectaculares formaciones rocosas.",
+        "price": 125789.36
+      },
+      "amount": 503157.44,
+      "quantity": 4,
+      "id": 5
+    },
+    {
+      "users": {
+        "id": 1,
+        "lastName": "Perez",
+        "name": "Juan Pablo",
+        "dni": "1234567",
+        "birthdate": "2023-10-11",
+        "email": "admin@gmail.com",
+        "userName": "admin",
+        "password": "admin123"
+      },
+      "travels": {
+        "id": 10,
+        "province": "San Luis",
+        "place": "Sierras de las Quijadas",
+        "activities": "Senderismo, observación de aves, geología",
+        "image": "https://i.pinimg.com/originals/e8/4c/c2/e84cc299e4e37e5aa10b819c31993404.jpg",
+        "description": "San Luis cuenta con hermosas sierras y paisajes naturales, ideales para el senderismo y la observación de aves.",
+        "price": 41356.96
+      },
+      "amount": 82713.92,
+      "quantity": 2,
+      "id": 7
+    },
+    {
+      "users": {
+        "id": 1,
+        "lastName": "Perez",
+        "name": "Juan Pablo",
+        "dni": "1234567",
+        "birthdate": "2023-10-11",
+        "email": "admin@gmail.com",
+        "userName": "admin",
+        "password": "admin123"
+      },
+      "travels": {
+        "id": 7,
+        "province": "Tierra del Fuego",
+        "place": "Ushuaia",
+        "activities": "Navegación, esquí, turismo antártico",
+        "image": "http://5b0988e595225.cdn.sohucs.com/images/20200315/66cfdfccae064d048e0fc1fc6c44ff58.jpeg",
+        "description": "Ushuaia es la ciudad más austral del mundo y es conocida como 'el fin del mundo', ofreciendo oportunidades únicas de aventura y exploración.",
+        "price": 100000
+      },
+      "amount": 300000,
+      "quantity": 3,
+      "id": 9
+    },
+    {
+      "users": {
+        "id": 1,
+        "lastName": "Perez",
+        "name": "Juan Pablo",
+        "dni": "1234567",
+        "birthdate": "2023-10-11",
+        "email": "admin@gmail.com",
+        "userName": "admin",
+        "password": "admin123"
+      },
+      "travels": {
+        "id": 1,
+        "province": "Buenos Aires",
+        "place": "Mar del Plata",
+        "activities": "Playa, surf, casino, gastronomía",
+        "image": "https://playastop.com/wp-content/uploads/2019/04/Mar-del-Plata.jpg",
+        "description": "Mar del Plata es uno de los destinos turísticos más populares de Argentina, conocido por sus playas, deportes acuáticos y vida nocturna.",
+        "price": 36846.63
+      },
+      "amount": 4532135.489999999,
+      "quantity": 123,
+      "id": 10
+    }
+  ],
+  "message": [
+    {
+      "id": 1,
+      "name": "Juan",
+      "subject": "Consultas 2",
+      "email": "pablo.d.cavallo@gmail.com",
+      "phone": "2235644477",
+      "message": "hola quiero consultar por un viaje"
+    },
+    {
+      "id": 2,
+      "name": "Sergio",
+      "subject": "Consultas",
+      "email": "romero@gmail.com",
+      "phone": "2235644477",
+      "message": "Como puedo comprar un viaje"
+    },
+    {
+      "id": 3,
+      "name": "Sergio",
+      "subject": "PAblo",
+      "email": "pablo.d.cavallo@gmail.com",
+      "phone": "2235644477",
+      "message": "cxzczxczxczxczxcccccccccccccccc"
+    },
+    {
+      "id": 4,
+      "name": "Sergio",
+      "subject": "Consultas",
+      "email": "admin@gmail.com",
+      "phone": "2235644477",
+      "message": "hjhj"
+    },
+    {
+      "id": 5,
+      "name": "Sergio",
+      "subject": "Consultas",
+      "email": "romero@gmail.com",
+      "phone": "2235644477",
+      "message": "como comprar un viaje"
+    }
+  ],
+  "travels": [
+    {
+      "id": 1,
+      "province": "Buenos Aires",
+      "place": "Mar del Plata",
+      "activities": "Playa, surf, casino, gastronomía",
+      "image": "https://playastop.com/wp-content/uploads/2019/04/Mar-del-Plata.jpg",
+      "description": "Mar del Plata es uno de los destinos turísticos más populares de Argentina, conocido por sus playas, deportes acuáticos y vida nocturna.",
+      "price": 36846.63
+    },
+    {
+      "id": 2,
+      "province": "Mendoza",
+      "place": "Parque Nacional Aconcagua",
+      "activities": "Trekking, montañismo, observación de la naturaleza",
+      "image": "https://s3-cdn.designerjourneys.com/expert/2499/images/proposal/35593/nicolas-perez-eNWcXCbE5fI-unsplash-1--1618222864315.jpg",
+      "description": "El Parque Nacional Aconcagua es el hogar de la montaña más alta de América del Sur y atrae a excursionistas y amantes de la naturaleza de todo el mundo.",
+      "price": 95365.78
+    },
+    {
+      "id": 3,
+      "province": "Salta",
+      "place": "Cafayate",
+      "activities": "Degustación de vinos, paisajes naturales",
+      "image": "https://cdn.getyourguide.com/img/location/5dc92946e7d33.jpeg/88.jpg",
+      "description": "Cafayate es famoso por sus bodegas y viñedos, y ofrece impresionantes paisajes de montañas y cañones.",
+      "price": 1235687.54
+    },
+    {
+      "id": 4,
+      "province": "Santa Cruz",
+      "place": "Glaciar Perito Moreno",
+      "activities": "Trekking en hielo, cruceros, observación de glaciares",
+      "image": "https://gigantespatagones.com.ar/wp-content/uploads/2019/05/glaciar-perito-moreno-parque.jpg",
+      "description": "El Glaciar Perito Moreno es uno de los glaciares más impresionantes del mundo y un destino imperdible en la Patagonia argentina.",
+      "price": 100000
+    },
+    {
+      "id": 5,
+      "province": "Córdoba",
+      "place": "Sierras de las Quijadas",
+      "activities": "Senderismo, observación de aves, geología",
+      "image": "https://3.bp.blogspot.com/-OpQq06KnH-o/UHdObchoMZI/AAAAAAAAEqc/7uN26Z9_r20/s1600/Cuyo+2009+066.jpg",
+      "description": "Las Sierras de las Quijadas ofrecen un paisaje desértico único y oportunidades para explorar la belleza natural y la historia geológica.",
+      "price": 100000
+    },
+    {
+      "id": 6,
+      "province": "Jujuy",
+      "place": "Quebrada de Humahuaca",
+      "activities": "Turismo cultural, senderismo, observación de paisajes",
+      "image": "https://wallpapercave.com/wp/wp8903417.jpg",
+      "description": "La Quebrada de Humahuaca es famosa por su belleza natural y su patrimonio cultural, con pueblos antiguos y espectaculares formaciones rocosas.",
+      "price": 125789.36
+    },
+    {
+      "id": 7,
+      "province": "Tierra del Fuego",
+      "place": "Ushuaia",
+      "activities": "Navegación, esquí, turismo antártico",
+      "image": "http://5b0988e595225.cdn.sohucs.com/images/20200315/66cfdfccae064d048e0fc1fc6c44ff58.jpeg",
+      "description": "Ushuaia es la ciudad más austral del mundo y es conocida como 'el fin del mundo', ofreciendo oportunidades únicas de aventura y exploración.",
+      "price": 100000
+    },
+    {
+      "id": 8,
+      "province": "San Juan",
+      "place": "Valle de la Luna",
+      "activities": "Geología, senderismo, observación astronómica",
+      "image": "https://wallpapercave.com/wp/wp4202058.jpg",
+      "description": "El Valle de la Luna es un paisaje lunar en la Tierra, conocido por su geología única y su cielo estrellado impresionante.",
+      "price": 25462.23
+    },
+    {
+      "id": 9,
+      "province": "Neuquén",
+      "place": "Villa La Angostura",
+      "activities": "Esquí, deportes acuáticos, senderismo",
+      "image": "https://www.rionegro.com.ar/wp-content/uploads/2020/08/villa-la-angostura-vista.jpg",
+      "description": "Villa La Angostura es un destino de montaña que ofrece actividades al aire libre en todas las estaciones del año.",
+      "price": 100000
+    },
+    {
+      "id": 10,
+      "province": "San Luis",
+      "place": "Sierras de las Quijadas",
+      "activities": "Senderismo, observación de aves, geología",
+      "image": "https://i.pinimg.com/originals/e8/4c/c2/e84cc299e4e37e5aa10b819c31993404.jpg",
+      "description": "San Luis cuenta con hermosas sierras y paisajes naturales, ideales para el senderismo y la observación de aves.",
+      "price": 41356.96
+    },
+    {
+      "id": 11,
+      "province": "Córdoba",
+      "place": "Villa General Belgrano",
+      "activities": "Fiesta de la cerveza, turismo rural, gastronomía",
+      "image": "https://i.pinimg.com/originals/61/30/29/613029ffc539dede5e1bfc420181518b.jpg",
+      "description": "Villa General Belgrano es conocida por su herencia alemana y la celebración de la Fiesta Nacional de la Cerveza.",
+      "price": 52365.99
+    },
+    {
+      "id": 12,
+      "province": "Buenos Aires",
+      "place": "Tigre",
+      "activities": "Paseos en lancha, kayak, museos",
+      "image": "https://images.rove.me/w_1920,q_85/wnkhqphpchog6wi0orqd/buenos-aires-getaway-to-tigre.jpg",
+      "description": "Tigre es un place encantador cerca de Buenos Aires, con canales, islas y actividades acuáticas para disfrutar.",
+      "price": 15687.23
+    }
+  ]
+}

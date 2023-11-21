@@ -1,0 +1,11 @@
+tbody td:nth-child(9):hover {
+    background-color: rgba(238, 89, 89, 0.692);
+    color: rgba(196, 173, 173, 0.493);
+    font-weight: bold;
+}
+
+tbody td:nth-child(10):hover {
+    background-color: rgba(111, 89, 238, 0.692);
+    color: rgba(196, 173, 173, 0.692);
+    font-weight: bold;
+}

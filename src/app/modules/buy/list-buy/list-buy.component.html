@@ -1,0 +1,73 @@
+<app-navbar-admin></app-navbar-admin>
+<h2 class="text-center fw-bold fs-3">Listado de compras</h2>
+<h1 class="fs-2 fw-bold text-center mb-2 mt-2">Ordenar por:</h1>
+<div class="navegacion-footer">
+  <div>
+   <!--  <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6"for="">Apellido</span>
+      <button type="button" class="btn btn btn-dark" (click)="orderAscLastName()">⇑</button>
+      <button type="button" class="btn btn btn-dark" (click)="orderDescLastName()">⇓</button>
+    </div>
+    <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6"for="">Nombre</span>
+      <button type="button" class="btn btn btn-dark"(click)="orderAscName()">⇑</button>
+      <button type="button" class="btn btn btn-dark"(click)="orderDescName()">⇓</button>
+    </div>
+    <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6"for="">Provincia</span>
+      <button type="button" class="btn btn btn-dark"(click)="orderAscProvince()">⇑</button>
+      <button type="button" class="btn btn btn-dark"(click)="orderDescProvince()">⇓</button>
+    </div>
+    <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6"for="">Lugar</span>
+      <button type="button" class="btn btn btn-dark"(click)="orderAscPlace()">⇑</button>
+      <button type="button" class="btn btn btn-dark"(click)="orderDescPlace()">⇓</button>
+    </div> -->
+    <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6 align-middle"for="">Cantidad</span>
+      <button type="button" class="btn btn btn-dark"(click)="orderAscQuantity()">⇑</button>
+      <button type="button" class="btn btn btn-dark"(click)="orderDescQuantity()">⇓</button>
+    </div>
+    <div class="btn-group me-md-2" role="group" aria-label="Basic example" style=" height: 4vh;">
+      <span style="width: 8vw;" class="bg-dark text-white text-center fs-6"for="">Monto</span>
+      <button type="button" class="btn btn btn-dark"(click)="orderAscAmount()">⇑</button>
+      <button type="button" class="btn btn btn-dark"(click)="orderDescAmount()">⇓</button>
+    </div>
+  </div>
+</div>
+<main class="contenedor">
+  <br>
+  <div  class="overflow-y-auto " style="height: 60vh;scrollbar-color: #0c0000;">
+  <table>
+    <thead class="titulo">
+      <tr>
+        <th>Nro°</th>
+        <th>Id</th>
+        <th>Apellido</th>
+        <th>Nombre</th>
+        <th>Provincia</th>
+        <th>Lugar</th>
+        <th>Cantidad</th>
+        <th>Monto</th>
+        <th>Eliminar</th>
+      <!--   <th>Editar</th> -->
+      </tr>
+    </thead>
+    <tbody class="compras">
+      <tr *ngFor="let item of listaCompras; index as i">
+        <td>{{i+1}}</td>
+        <td>{{ item.id }}</td>
+        <td>{{ item.users?.lastName}}</td>
+        <td>{{ item.users?.name}}</td>
+        <td>{{ item.travels?.province}}</td>
+        <td>{{ item.travels?.place}}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.amount| number: '1.2-2'}}</td>
+        <td><input type="button" name="" value="❌" (click)="eliminarCompra(item)" class="btn btn-outline-danger"></td>
+       <!--  <td><input type="button" name="" value="📝" [routerLink]="['/editBuy',item]" class="btn btn-outline-primary">
+        </td> -->
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</main>
